@@ -1,8 +1,9 @@
 @media (max-width: 620px) {
-    .hunter-slider{
-        padding: 0.15px;
+    .pokemon-slider {
+        padding: 0 15px;
         gap: 10px;
     }
+
     .btn-seta {
         width: 20px;
         height: 20px;
@@ -11,28 +12,21 @@
         justify-content: center;
         align-items: center;
     }
-    
-    .lista-personagens{
-        width: 400px;
+
+    .lista-personagens {
+        height: 480px;
     }
 
-    .cartao .imagem-hunter{
+    .cartao .imagem-fundo-hunter {
         max-height: 230px;
     }
-}
 
+    .cartao .informacoes .nome {
+        max-width: 50%;
+        font-size: 18px;
+    }
 
-@media (max-width: 768px) { 
-
-}
-
-
-
-@media (max-width: 992px) { 
-
-}
-
-
-
-@media (max-width: 1200px) {   
+    .cartao .informacoes .nen {
+        font-size: 14px;
+    }
 }
