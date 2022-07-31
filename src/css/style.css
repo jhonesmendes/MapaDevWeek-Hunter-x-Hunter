@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Fira+Code:wght@500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;   
+    background-image: url(../imagens/Hunter-X-Hunter-fundo.png) ;
+    width:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    padding-top: 50px;
+}
+
+.cabecalho .titulo{
+    color: #f60c0c ;
+    font-size: 50px;
+}
+
+.cabecalho .hunter{
+    width: 250px;
+    height: 150px;
+}
+
+.hunter-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 0px 0;
+}
+.lista-personagens{
+    width: 510px;
+    height: 1050px;
+    position: relative;
+}
+.btn-seta{
+    background-color: #f0ebfd;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition:background-color 0.3s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.btn-seta.btn-volta{
+    transform: rotateY(180deg);
+}
+.btn-seta.btn-seta.btn-volta:hover{
+    background-color: #be2f03;
+}
+.btn-seta:hover{
+    background-color: #229c09;
+}
+.cartao{
+    background-color: #f1ecff;
+    opacity:0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: opacity 0.3s;
+}
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.imagem-fundo-hunter{
+    background: url(../imagens/hunter.png)  no-repeat;
+}
+.imagem-fundo-gon{
+    background: url(../imagens/gon-adulto.png)  no-repeat;
+}
+.imagem-fundo-killua{
+    background: url(../imagens/killua-fundo.jpg)  no-repeat;
+}
+.imagem-fundo-leorio{
+    background: url(../imagens/Leoreo-fundo.jpg)  no-repeat;
+}
+.imagem-fundo-kurupika{
+    background: url(../imagens/kurapika-fundo.jpg)  no-repeat;
+}
+.imagem-fundo-hisoka{
+    background: url(../imagens/hisoka-fundo.jpg)  no-repeat;
+}
+.imagem-fundo-chrollo{
+    background: url(../imagens/chrollo-fundo.jpg)  no-repeat;
+}
+.imagem-fundo-netero{
+    background: url(../imagens/netero-fundo.jpg)  no-repeat;
+}
+.cartao .informacoes{
+    background-color: rgba(179, 177,185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+}  
+.cartao .informacoes .nome{
+    color: #f1ecff;
+    font-size: 22px;
+   
+}
+.cartao .informacoes .nen{
+    background-color: #333;
+    color: #f1ecff;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+.cartao .container-imagem{
+    text-align: center;
+}
+.cartao .imagem-hunter{
+    max-width: 100%;
+    /* max-height: 280px; */
+    padding: 20px;
+}
+.cartao .descricao{
+    height: 190px;
+    background: rgba(255,255,255,0.8);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cartao .descricao .titulo{
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 15px;
+    padding: 12px;
+}
+.cartao .descricao .texto{
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}
