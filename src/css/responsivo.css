@@ -1,7 +1,7 @@
-@media (max-width: 620px) {
-    .pokemon-slider {
-        padding: 0 15px;
-        gap: 10px;
+@media (max-width: 520px) {
+    .hunter-slider {
+        padding: 0px 10px 10px 20px;
+        gap: 5px;
     }
 
     .btn-seta {
@@ -15,16 +15,18 @@
 
     .lista-personagens {
         height: 480px;
-        width: 90px;
     }
 
     .cartao .imagem-fundo-hunter {
         max-height: 230px;
     }
 
-    .cartao .informacoes .nome {
-        max-width: 50%;
+    .cartao .informacoes .nome {    
+        max-width: 80%;
         font-size: 18px;
+    }
+    .cartao .nen .descricao .titulo .texto{
+        font-size: 9px;
     }
 
     .cartao .informacoes .nen {
