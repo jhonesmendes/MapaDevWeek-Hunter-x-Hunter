@@ -3,6 +3,10 @@
         padding: 0px 10px 10px 20px;
         gap: 5px;
     }
+    .cabecalho .hunter{
+        width: 70px;
+        height: 70px;
+    }
 
     .btn-seta {
         width: 20px;
@@ -14,16 +18,19 @@
     }
 
     .lista-personagens {
-        height: 480px;
+        height: 630px;
+        width: 300px;
     }
 
     .cartao .imagem-fundo-hunter {
-        max-height: 230px;
+        max-height: 250px;
+
     }
 
     .cartao .informacoes .nome {    
-        max-width: 80%;
+        text-align: center;
         font-size: 18px;
+        margin-right: 5px;
     }
     .cartao .nen .descricao .titulo .texto{
         font-size: 9px;
